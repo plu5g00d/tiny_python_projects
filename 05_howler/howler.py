@@ -61,7 +61,7 @@ def main():
     # Return a copy of the string with the leading and trailing characters removed. 
     # The chars argument is a string specifying the set of characters to be removed. If omitted or None, the chars argument defaults to removing whitespace.
     for line in text:
-        print(line.strip("\n").upper(), file=fh)
+        print(line.rstrip("\n").upper(), file=fh)
 
     if fileName != '':
         fh.close()
